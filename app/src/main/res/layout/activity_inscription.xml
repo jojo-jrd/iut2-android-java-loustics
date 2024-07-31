@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ActivityInscription"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/texteInscription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inscription"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:textSize="40dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/avatar"
+        app:srcCompat="@drawable/avatar11" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:gravity="center"
+        android:layout_marginBottom="10dp">
+
+        <TableRow>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/a1"
+                android:src="@drawable/avatar1"
+                android:onClick="selectionImage"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/a2"
+                android:src="@drawable/avatar2"
+                android:onClick="selectionImage"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/a3"
+                android:src="@drawable/avatar3"
+                android:onClick="selectionImage"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/a4"
+                android:src="@drawable/avatar4"
+                android:onClick="selectionImage"/>
+        </TableRow>
+
+        <TableRow>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/a5"
+                android:src="@drawable/avatar5"
+                android:onClick="selectionImage"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/a6"
+                android:src="@drawable/avatar6"
+                android:onClick="selectionImage"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/a7"
+                android:src="@drawable/avatar7"
+                android:onClick="selectionImage"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/a8"
+                android:src="@drawable/avatar8"
+                android:onClick="selectionImage"/>
+        </TableRow>
+
+        <TableRow>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/a9"
+                android:src="@drawable/avatar9"
+                android:onClick="selectionImage"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/a10"
+                android:src="@drawable/avatar10"
+                android:onClick="selectionImage"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/a11"
+                android:src="@drawable/avatar11"
+                android:onClick="selectionImage"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/a12"
+                android:src="@drawable/avatar12"
+                android:onClick="selectionImage"/>
+        </TableRow>
+
+    </TableLayout>
+
+
+    <EditText
+        android:id="@+id/pseudo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:hint="Pseudo" />
+
+    <EditText
+        android:id="@+id/nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:hint="Nom" />
+
+    <EditText
+        android:id="@+id/prenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:hint="Prenom" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="S'inscrire"
+            android:layout_marginBottom="30dp"
+            android:onClick="SaveCompte"/>
+
+    </LinearLayout>
+
+</LinearLayout>

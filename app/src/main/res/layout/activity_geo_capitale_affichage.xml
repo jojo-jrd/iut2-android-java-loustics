@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.geographie.ActivityGeoCapitaleAffichage">
+
+    <TextView
+        android:id="@+id/ennonceCapitale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="Capital"/>
+
+    <TextView
+        android:id="@+id/affichageCapitalePays"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="Capital"/>
+
+    <EditText
+        android:id="@+id/reponseCapitalePays"
+        android:layout_marginTop="40dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:hint="Pays" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Valider"
+        android:onClick="validationCapitalePays"/>
+
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/texteEnnonceMultiplication"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="Choisissez votre\ntable" />
+
+            <NumberPicker
+                android:id="@+id/table"
+                android:layout_margin="15dp"
+                android:layout_width="500px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="16dp"
+            android:text="Facile = 5 premières multiplication de la table choisie\nMoyen = 5 multiplications alétoires de la table choisie dans un ordre croissant\nDifficile = 10 multiplications de la table choisie dans un ordre aléatoire\nTrès Difficile = 10 multiplications avec des termes aléatoires\n\n1 bonne réponse = 1 point\n1 réponse corrigée = 0.5 point"/>
+
+
+
+        <RadioGroup
+            android:id="@+id/difficultés"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/facile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facile"
+                android:checked="true"
+                android:onClick="afficherNumberPicker"/>
+
+            <RadioButton
+                android:id="@+id/moyen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Moyen"
+                android:onClick="afficherNumberPicker"/>
+
+            <RadioButton
+                android:id="@+id/difficile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Difficile"
+                android:onClick="afficherNumberPicker"/>
+
+            <RadioButton
+                android:id="@+id/tresDifficle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Très Difficile"
+                android:onClick="enleverNumberPicker"/>
+        </RadioGroup>
+
+
+
+        <Button
+            android:layout_width="300px"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Valider"
+            android:onClick="afficherTable"/>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

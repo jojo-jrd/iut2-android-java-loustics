@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.maths.ActivityMathTableAdditionChoix">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:text="Choisissez votre niveau d'addition" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="16dp"
+        android:text="Facile = 5 additions avec les termes entre 0 et 10\nMoyen = 7 additions avec les termes entre 0 et 50\nDifficile = 10 additions avec les termes entre 0 et 500\n\n1 bonne réponse = 1 point\n1 réponse corrigée = 0.5 point" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/difficultés"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/facileAddition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facile"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/moyenAddition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Moyen" />
+
+            <RadioButton
+                android:id="@+id/difficileAddition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Difficile" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="300px"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Valider"
+        android:onClick="afficherTable"/>
+
+</LinearLayout>

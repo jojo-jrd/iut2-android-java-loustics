@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.geographie.ActivityGeoDrapeauChoix">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:text="Règles drapeaux par pays" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="16dp"
+        android:text="Dans cette exercice, vous devez écrire le pays du drapeau affiché :\n\tIl y a 5 drapeaux par série.\n\tLes majuscules ne comptent pas.\n\tATTENTION, il faut écrire avec les accents." />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="400px"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Commencer"
+        android:onClick="afficherDrapeaux"/>
+
+</LinearLayout>

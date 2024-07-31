@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.geographie.ActivityGeoDrapeauAffichage">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="Trouver le pays possédant ce drapeau :"/>
+
+    <ImageView
+        android:id="@+id/affichageDrapeau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/flag_inde"/>
+
+
+    <EditText
+        android:id="@+id/reponseDrapeauPays"
+        android:layout_marginTop="40dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:hint="Pays" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Valider"
+        android:onClick="validationDrapeau"/>
+
+</LinearLayout>

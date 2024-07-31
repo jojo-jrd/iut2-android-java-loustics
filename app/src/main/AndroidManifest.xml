@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.josseraj_ecole_des_loustics">
+
+    <!--android:roundIcon="@drawable/icon_fond"-->
+    <application
+        android:name=".classes.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_application"
+        android:label="@string/app_name"
+
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Josserajecoledesloustics">
+        <activity
+            android:name=".activities.geographie.ActivityGeoDrapeauAffichage"
+            android:exported="false" />
+        <activity
+            android:name=".activities.geographie.ActivityGeoDrapeauChoix"
+            android:exported="false" />
+        <activity
+            android:name=".activities.maths.ActivityMathTableEchecCorrection"
+            android:exported="false" />
+        <activity
+            android:name=".activities.maths.ActivityMathTableSoustractionAffichage"
+            android:exported="false" />
+        <activity
+            android:name=".activities.maths.ActivityMathTableSoustractionChoix"
+            android:exported="false" />
+        <activity
+            android:name=".activities.francais.ActivityFrancaisGrammaireAffichageMoyen"
+            android:exported="false" />
+        <activity
+            android:name=".activities.francais.ActivityFrancaisGrammaireChoix"
+            android:exported="false" />
+        <activity
+            android:name=".activities.francais.ActivityFrancaisResultat"
+            android:exported="true" />
+        <activity
+            android:name=".activities.francais.ActivityFrancaisConjugaisonEtGrammaireFacileAffichage"
+            android:exported="true" />
+        <activity
+            android:name=".activities.francais.ActivityFrancaisConjugaisonChoix"
+            android:exported="true" />
+        <activity
+            android:name=".activities.menus.ActivityMenuFrancais"
+            android:exported="true" />
+        <activity
+            android:name=".activities.geographie.ActivityGeoResultat"
+            android:exported="false" />
+        <activity
+            android:name=".activities.geographie.ActivityGeoCapitaleAffichage"
+            android:exported="false" />
+        <activity
+            android:name=".activities.geographie.ActivityGeoCapitaleChoix"
+            android:exported="false" />
+        <activity
+            android:name=".activities.menus.ActivityMenuGeographie"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ActivityProfil"
+            android:exported="false" />
+        <activity
+            android:name=".activities.maths.ActivityMathTableAdditionAffichage"
+            android:exported="true" />
+        <activity
+            android:name=".activities.menus.ActivityMenuMaths"
+            android:exported="true" />
+        <activity
+            android:name=".activities.maths.ActivityMathTableAdditionChoix"
+            android:exported="true" />
+        <activity
+            android:name=".activities.menus.ActivityMenuPrincipal"
+            android:exported="false" />
+        <activity
+            android:name=".activities.maths.ActivityMathTableMultiplicationChoix"
+            android:exported="false" />
+        <activity
+            android:name=".activities.maths.ActivityMathTableEchec"
+            android:exported="false" />
+        <activity
+            android:name=".activities.maths.ActivityMathTableReussite"
+            android:exported="false" />
+        <activity
+            android:name=".activities.maths.ActivityMathTableMultiplicationAffichage"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ActivityInscription"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

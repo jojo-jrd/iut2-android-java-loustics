@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.geographie.ActivityGeoCapitaleChoix">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:text="Choisissez exercice sur les capitales" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="16dp"
+        android:text="Vous devez dans cette exercice :\n\t- Trouver la capitale d'un pays donné\n\t- Ou trouver le pays associé à la capitale donnée\n\nIl y a 7 questions par série.\n\nLes majuscules ne comptent pas.\nATTENTION, il faut écrire avec les accents.\nBonne chance !" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/exoChoisi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/rechercheCapitale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chercher les capitales par pays"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/recherchePays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chercher les pays par capitale" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="300px"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Valider"
+        android:onClick="afficherCapAffichage"/>
+
+</LinearLayout>
